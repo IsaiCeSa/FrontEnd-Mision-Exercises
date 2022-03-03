@@ -1,2 +1,3 @@
 # FrontEnd-Mision-Exercises
-Ejercicios resultos de la misión FrontEnd
+
+Practicas y ejercicios de las seciones de la FrontEnd-Misionmision
