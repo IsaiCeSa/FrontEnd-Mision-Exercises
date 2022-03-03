@@ -1,0 +1,42 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 20px;
+}
+
+.colorRojo{
+    color: red;
+}
+
+.colorNaranja{
+    color: tomato;
+}
+
+/* Red Green Blue */
+.colorRGB{
+    color: rgb(103, 218, 208)
+}
+
+/* Red Green Blue Alpha(numero de 0.0 a 1.0
+    (alfa indica la opacidad de cada píxel y permite que una imagen se combine con otras utilizando la composición alfa, 
+     con áreas transparentes y suavizado de bordes en las regiones opacas.) */
+.colorRGBA{
+    color: rgba(0, 255, 115, 0.75);
+}
+
+/* Red Green Blue Alpha(porcentaje) */
+.colorRGBA_p{
+    color: rgba(0, 255, 115, 50%);
+}
+
+/* HEXadecimal */
+.colorHEX{
+    color: #11ffd7;
+}
+
+/* Hue, Saturation, Lightness */
+.colorHSL{
+    color: hsla(0, 100%, 50%, 0.089);
+}

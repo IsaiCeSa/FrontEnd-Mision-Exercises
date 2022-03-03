@@ -1,0 +1,106 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    height: 200px;
+}
+
+div{
+    height: 400px;
+}
+
+.fondoColor{
+    /* 
+        A diferencia de la propiedad color, aplica color, no sobre el elemento, si no el fondo del elemento.
+    */
+    background-color: #0f6666; 
+}
+
+.fondoOpacidad{
+    background-color: #5d0c0c;
+    /*
+        La propiedad opacity no aplica para todos los elementos. Aplica una transparencia.
+    */
+    opacity: 0.8;
+}
+
+.fondoSinOpacidad{
+    background-color: #5d0c0c;
+}
+
+.fondoGradiente{
+    /*cssgradient.io*/
+    background: rgb(30,226,19);
+    background: linear-gradient(180deg, rgba(30,226,19,1) 11%, rgba(205,179,23,0.4906337535014006) 39%, rgba(21,206,205,1) 59%, rgba(0,212,255,1) 100%);
+}
+
+.fondoImagen{
+    /*
+        Si el tamaño de la imagen no es suficiente para ocupar todo el espacio, esta se repite hasta alcanzarlo. 
+        Es una propiedad por default.
+    */
+    background-image: url("../images/fondo1.jpg");
+}
+
+.fondoImagenExterna{
+    background-image: url("https://webcdn.factorio.com/assets/img/web/bg_v4-85.jpg");
+    /*background-image: url("https://webcdn.factorio.com/assets/img/web/rocket-loop-halfsize.png");*/
+}
+
+.fondoRepetidoX{
+    background-image: url("../images/fondo2.jpg");
+    /*
+        Para controlar como se repite en x. Horizontal.
+    */
+    background-repeat: repeat-x;
+}
+
+.fondoRepetidoY{
+    background-image: url("../images/fondo1.jpg");
+    /*
+        Para controlar como se repite en x. Vertical.
+    */
+    background-repeat: repeat-y;
+}
+
+.fondoNoRepetido{
+    background-image: url("../images/fondo2.jpg");
+    /*
+        Para controlar y no repetir.
+    */
+    background-repeat: no-repeat;
+}
+    /*
+        No repetir y centrar a la derecha. Desde donde va estar el inicio de nuestra imagen. Por default es Arriba a la izquierda.
+    */
+.fondoPosicion{
+    background-image: url("../images/fondo1.jpg");
+    /*
+        No repetir y abajo a la derecha.
+    */
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.fondoPosicionTop{
+    background-image: url("../images/fondo1.jpg");
+    /*
+        No repetir y arriba a la izquierda.
+    */
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.fondoCompleto{
+    background-image: url("../images/fondo2.jpg");
+    background-repeat: no-repeat;
+    /*
+        Imagen centrada a partir del tamaño de la sección.
+    */
+    background-position: center;
+    /*
+        Cubre la sección independiente si la imagen es del tamaño.
+    */
+    background-size: cover;
+}
